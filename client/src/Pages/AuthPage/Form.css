@@ -1,0 +1,101 @@
+.register-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../asset/bg.jpg") no-repeat center center/cover;
+  opacity: 2;
+  height: 100vh;
+  position: relative;
+  color: var(--primary);
+}
+
+.register-form-container > form {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.register-form {
+  /* background-color: #fff; */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.register-form h2 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  /* background-color: #fff; */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ccc;
+  outline: none;
+}
+
+.form-group .error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease-in 100ms;
+}
+.link:hover {
+  font-weight: 500;
+}
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .form-group input {
+    padding: 0.5rem;
+  }
+
+  .form-btn {
+    padding: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+}

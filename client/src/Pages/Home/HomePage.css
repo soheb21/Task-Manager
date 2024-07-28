@@ -1,0 +1,52 @@
+.hero {
+  background: url("../../asset/bg.jpg") no-repeat center center/cover;
+  opacity: 2;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: start;
+  font-size: 1rem;
+  top: 0%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary_color);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+.navbar > h1 {
+  background-color: rgb(232, 158, 22);
+  border-radius: 10px;
+  color: var(--primary_color);
+  font-weight: 400;
+  padding: 0 0.5rem;
+}
+.logout-btn {
+  background-color: orangered;
+  color: var(--primary_color);
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all ease-in-out 300ms;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  transform: scale(1.2);
+}

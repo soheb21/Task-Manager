@@ -1,0 +1,70 @@
+.add-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+  width: 100%;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+.add-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.add-info > label {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  background-color: var(--primary_color);
+  width: fit-content;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+}
+.add-info > input {
+  height: 1.4rem;
+  padding: 1.6rem 1rem;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--secondary);
+  margin-bottom: 0.5rem;
+  background: #e8e5e5;
+}
+
+.add-info > textarea {
+  padding: 1.1rem;
+  font-size: 1.1rem;
+  color: var(--primary);
+  border-radius: 8px;
+  outline: none;
+  background: #e8e5e5;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  border: 2px solid var(--secondary);
+}
+.add-info > select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  background-color: black;
+  border-radius: 8px;
+  outline: none;
+  width: fit-content;
+  border: 2px solid var(--secondary);
+}
+@media only screen and (max-width: 600px) {
+  .add-info > label {
+    font-size: 1rem;
+  }
+  .add-info > input {
+    height: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .add-info > textarea {
+    padding: 0.7rem;
+    font-size: 1.1rem;
+  }
+}
